@@ -1,1 +1,59 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaf6ff;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #0077cc;
+  margin-bottom: 2rem;
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.ramo {
+  border: 2px solid #00aaff;
+  background-color: #d0f0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ramo:hover {
+  background-color: #b8e6ff;
+}
+
+.ramo.locked {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+  color: #777;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ramo.completed {
+  background-color: #a3f7bf;
+  border-color: #3ac56e;
+  color: #1e5128;
+}
+
+.semestre-titulo {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  color: #005f99;
+  border-bottom: 1px solid #0077cc;
+  margin-top: 1rem;
+}
 
